@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvimento web</title>
+    <title>Aulas vai na web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Olá, Mundo!</h1>
@@ -37,13 +38,50 @@
     </ul>
 
     <!-- imagem -->
-    <img src="" alt="Vai aqui uma imagem qualquer">
+    <img id="ilha" src="ilha.jpg" alt="Vai aqui uma imagem qualquer">
 
     <!-- aula formulário -->
 
-<form action="submit">
-    <label for="">Nome:</label>
-    <input id="" name="" type="text">
+<form action="POST">
+    
+    <label for="nome">Nome:</label>
+    <input id="nome" name="nome" type="text" required> </br>
+    
+    <label for="email">E-mail:</label>
+    <input name="email" id="email" type="email" required></br>
+    
+    <label for="idade">Idade:</label>
+    <input name="idade" id="idade" type="number"> </br>
+
+    <label for="aniversario">Aniversário:</label>
+    <input name="aniversario" id="data_aniversario" type="date"></br>
+
+    <label for="hora">Hora:</label>
+    <input name="hora" id="hora"type="time"> </br>
+
+    <label for="telefone">Telefone:</label>
+    <input name="telefone" id="telefone" type="tel"></br>
+
+    <label for="Senha">Senha:</label>
+    <input name="Senha" id="senha" type="password" required></br>
+    
+    <h3>Qual a sua linguagem preferida?</h3>
+    <input id="html" name="fav_lang" type="radio" value="html">
+    <label for="html">HTML</label>
+
+    <input id="css" name="fav_lang" type="radio" value="css">
+    <label for="css">CSS</label>
+
+    <input id="javascript" name="fav_lang" type="radio" value="javascript">
+    <label for="javascript">JAVASCRIPT</label>
+
+    <input id="java" name="fav_lang" type="radio" value="java">
+    <label for="java">JAVA</label>
+    
+
+
+    <input value="Enviar Forms"type="submit"></br>
+
 </form>
 
 </body>
