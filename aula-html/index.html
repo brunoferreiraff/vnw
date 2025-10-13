@@ -42,16 +42,16 @@
 
     <!-- aula formulário -->
 
-<form action="POST">
-    
+<form action="GET">
+  <!-- Aula sobre regex -->
     <label for="nome">Nome:</label>
-    <input id="nome" name="nome" type="text" required> </br>
+     <input id="nome" name="nome" type="text" required placeholder="Digite Seu Nome" pattern="^[A-Za-zÀ-Ÿ\s]{3,50}$"  title="O nome deve conter apenas letras e espaços. (Mínimo 3 caracteres)"> </br> <!-- O regex é ^[A a Z Maiusculos - A a Z minusculos - acentos variados \s = espaço em branco. {minimo de 3 e maximo de 50 caracteres} -->
     
     <label for="email">E-mail:</label>
     <input name="email" id="email" type="email" required></br>
     
-    <label for="idade">Idade:</label>
-    <input name="idade" id="idade" type="number"> </br>
+    <label for="cpf">CPF:</label>
+    <input name="cpf" id="cpf" type="text" placeholder="Digite aqui o seu CPF" pattern="^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$" title=""> </br>
 
     <label for="aniversario">Aniversário:</label>
     <input name="aniversario" id="data_aniversario" type="date"></br>
